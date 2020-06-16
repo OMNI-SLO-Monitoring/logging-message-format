@@ -132,8 +132,8 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "4206516df3a9b5c23a470bb3452e8ef9d3754185757967d6352263f82b8480fb",
-        "signature": "b0a69e9b2d46e145eb2e2104cf86c8d3ecf327f98d908bda5ecc2f3399a45f96",
+        "version": "40b0d42d98bcae3ffc13589ef097172dae403f79d48ebed4766ca270c3e7e799",
+        "signature": "06daf85dfe1244c444bf6fc5b3da7f53364e0b039f7c82233ac04a9d5d7b96d6",
         "affectsGlobalScope": false
       }
     },
@@ -152,6 +152,7 @@
     },
     "referencedMap": {
       "../src/index.ts": [
+        "../src/log-type.ts",
         "../src/logging-message-format.ts"
       ],
       "../src/logging-message-format.ts": [
@@ -160,6 +161,7 @@
     },
     "exportedModulesMap": {
       "../src/index.ts": [
+        "../src/log-type.ts",
         "../src/logging-message-format.ts"
       ],
       "../src/logging-message-format.ts": [

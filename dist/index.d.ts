@@ -1,2 +1,3 @@
 import { LogMessageFormat } from "./logging-message-format";
-export { LogMessageFormat };
+import { LogType } from "./log-type";
+export { LogMessageFormat, LogType };
