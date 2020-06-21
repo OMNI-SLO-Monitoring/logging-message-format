@@ -4,5 +4,14 @@ export interface LogMessageFormat {
     time: number;
     source: string;
     target: string;
-    message: string;
+    data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
+}
+export interface CpuUtilizationLogData {
+    cpuLoad: number;
+}
+export interface TimeoutLogData {
+}
+export interface CbOpenLogData {
+}
+export interface ErrorLogData {
 }
