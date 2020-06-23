@@ -1,17 +1,23 @@
 import { LogType } from "./log-type";
 export interface LogMessageFormat {
-    type: LogType;
     time: number;
     source: string;
-    target: string;
+    detector: string;
+    message: string;
+    type: LogType;
     data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
 }
 export interface CpuUtilizationLogData {
-    cpuLoad: number;
+    cpuUtilization: number;
 }
 export interface TimeoutLogData {
+    timeoutDuration: number;
 }
 export interface CbOpenLogData {
+    openTime: number;
+    failedResponses: number;
 }
 export interface ErrorLogData {
+    expected: any;
+    result: any;
 }
