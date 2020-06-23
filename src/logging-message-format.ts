@@ -1,9 +1,10 @@
 import { LogType } from "./log-type";
 
-/*
+/**
   LogMessageFormat provides the types for a LogMessage.
-  It contains Meta Data wich every Log should have and Custom Data.
+  It contains Meta Data which every Log should have and Custom Data.
   Which Custom Data is used, is defined by the used type (LogType).
+  @Param time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision. 
 */
 export interface LogMessageFormat {
   // Meta Data
@@ -11,7 +12,7 @@ export interface LogMessageFormat {
   // date and time when log was created
   time: number;
 
-  // The service where the error occured (Not yet specified what should be reported: url,name,...)
+  // The service where the error occurred (Not yet specified what should be reported: url,name,...)
   source: string;
 
   // The service where the error was detected (Not yet specified what should be reported: url,name,...)
@@ -28,7 +29,7 @@ export interface LogMessageFormat {
 }
 
 /*
-  CpuUtilizationLogData is the custom data for Cpu Utilizaton Logs
+  CpuUtilizationLogData is the custom data for Cpu Utilization Logs
 */
 export interface CpuUtilizationLogData {
   // CPU Utilization value
