@@ -8,7 +8,9 @@ import { LogType } from "./log-type";
 export interface LogMessageFormat {
   // Meta Data
   
-  // time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision. 
+  /**
+  time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision. 
+  */
   time: number;
 
   // The service where the error occurred (Not yet specified what should be reported: url,name,...)
