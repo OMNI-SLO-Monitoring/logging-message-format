@@ -17,8 +17,8 @@ export interface LogMessageFormat {
   // The service where the error was detected (Not yet specified what should be reported: url,name,...)
   detector: string;
 
-  // any additional message
-  message: string;
+  // optional: any additional message
+  message?: string;
 
   // type defines the used custom data
   type: LogType;
