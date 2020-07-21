@@ -8,13 +8,13 @@ A TypeScript Package that provides the types for a LogMessage. It contains Meta 
 
 ## LogMessageFormat
 `
-{
-  time: number;
-  source: string;
-  detector: string;
-  message?: string;
-  type: LogType;
-  data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
+{ <br/>
+  time: number; <br/>
+  source: string; <br/>
+  detector: string; <br/>
+  message?: string; <br/>
+  type: LogType; <br/>
+  data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData; <br/>
 }
 `
 
