@@ -127,20 +127,19 @@
         "affectsGlobalScope": false
       },
       "../src/logging-message-format.ts": {
-        "version": "5026b59a175ad332930f5ccafdd431e2b246a6fc49dadf3e78603bb9d0f1a9b0",
-        "signature": "26c1ee344cbeb77a7c4e9d4e876309ab5e9bd55458999449cb93e1f3ef4e4302",
+        "version": "9b9dcea32b8f94ee7c96845c1a944302377ad2242de27be8548905c35d930202",
+        "signature": "4bdc186c34a3cf3bcdc911c6f55ea0dd8c4d43b91a1a243a4c87f540b6a9427a",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "40b0d42d98bcae3ffc13589ef097172dae403f79d48ebed4766ca270c3e7e799",
-        "signature": "06daf85dfe1244c444bf6fc5b3da7f53364e0b039f7c82233ac04a9d5d7b96d6",
+        "version": "fff875140c5a88992fcdedd9287a65b372e7c934f19bced22627dc77870259ae",
+        "signature": "cd8ed931499be3a36f2ff6f130329abe8bf77b01fa71964f3573318a4b608afa",
         "affectsGlobalScope": false
       }
     },
     "options": {
       "module": 1,
       "declaration": true,
-      "removeComments": true,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "target": 4,
