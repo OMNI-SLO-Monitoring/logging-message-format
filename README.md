@@ -7,16 +7,21 @@ A TypeScript Package that provides the types for a LogMessage. It contains Meta 
 `npm i https://github.com/ccims/logging-message-format.git`
 
 ## LogMessageFormat
-`
-{ <br/>
-  time: number; <br/>
-  source: string; <br/>
-  detector: string; <br/>
-  message?: string; <br/>
-  type: LogType; <br/>
-  data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData; <br/>
-}
-`
+`{ 
+
+  time: number; 
+  
+  source: string; 
+  
+  detector: string; 
+  
+  message?: string; 
+  
+  type: LogType; 
+  
+  data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
+  
+}`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
