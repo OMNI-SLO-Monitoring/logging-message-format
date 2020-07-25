@@ -127,13 +127,28 @@
         "affectsGlobalScope": false
       },
       "../src/logging-message-format.ts": {
-        "version": "9b9dcea32b8f94ee7c96845c1a944302377ad2242de27be8548905c35d930202",
-        "signature": "4bdc186c34a3cf3bcdc911c6f55ea0dd8c4d43b91a1a243a4c87f540b6a9427a",
+        "version": "061c31f718c35e9bc38a1704ed127e69233a9c8b1b39f2f236744d7e54f8a110",
+        "signature": "4567c83dc488ee17970dcc8965a0f7eafacb09022d9813928cac4a92eddf7bc3",
+        "affectsGlobalScope": false
+      },
+      "../src/error-format.ts": {
+        "version": "3926484494d92874bead27eb5638e1affc0ea62ed1d7108769c9deabe460c2c2",
+        "signature": "c9ab381a1c35efcf17a74aa35edf7dbb8c8769792d08e17cd391ec5425c28b36",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/axios/index.d.ts": {
+        "version": "e7df7eb51c5090db4bdcdbf9efe053530dff0e33796f40b08b1a3be6c3a351d0",
+        "signature": "e7df7eb51c5090db4bdcdbf9efe053530dff0e33796f40b08b1a3be6c3a351d0",
+        "affectsGlobalScope": false
+      },
+      "../src/error-reporter.ts": {
+        "version": "3662dd3606361404258b5964b203db219d7b2f57fcab24a5ddc421267eeced8f",
+        "signature": "94d88b4e7f5e35c60529736d6096bf446566e5b709fbf998ba109b1f04762bbf",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "fff875140c5a88992fcdedd9287a65b372e7c934f19bced22627dc77870259ae",
-        "signature": "cd8ed931499be3a36f2ff6f130329abe8bf77b01fa71964f3573318a4b608afa",
+        "version": "d32a6af8e554077b51721f095285e923ddc75be0dda7c702d224e721ff31b22f",
+        "signature": "aa87aa92b9812e4e9a9b7db3c885126546bf5b63a2522408fa4bdb332b2336c6",
         "affectsGlobalScope": false
       }
     },
@@ -147,10 +162,20 @@
       "outDir": "./",
       "baseUrl": "..",
       "incremental": true,
+      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
+      "../src/error-format.ts": [
+        "../src/logging-message-format.ts"
+      ],
+      "../src/error-reporter.ts": [
+        "../node_modules/axios/index.d.ts",
+        "../src/error-format.ts"
+      ],
       "../src/index.ts": [
+        "../src/error-format.ts",
+        "../src/error-reporter.ts",
         "../src/log-type.ts",
         "../src/logging-message-format.ts"
       ],
@@ -159,7 +184,15 @@
       ]
     },
     "exportedModulesMap": {
+      "../src/error-format.ts": [
+        "../src/logging-message-format.ts"
+      ],
+      "../src/error-reporter.ts": [
+        "../src/error-format.ts"
+      ],
       "../src/index.ts": [
+        "../src/error-format.ts",
+        "../src/error-reporter.ts",
         "../src/log-type.ts",
         "../src/logging-message-format.ts"
       ],
@@ -168,6 +201,9 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "../node_modules/axios/index.d.ts",
+      "../src/error-format.ts",
+      "../src/error-reporter.ts",
       "../src/index.ts",
       "../src/log-type.ts",
       "../src/logging-message-format.ts",
