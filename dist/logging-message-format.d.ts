@@ -5,6 +5,9 @@ import { LogType } from "./log-type";
   Which Custom Data is used, is defined by the used type (LogType).
 */
 export interface LogMessageFormat {
+    /**
+    time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision.
+    */
     time: number;
     source: string;
     detector: string;
