@@ -23,3 +23,4 @@ export const reportError = (error: ErrorFormat): ErrorFormat => {
 
     return error;
 }
+
