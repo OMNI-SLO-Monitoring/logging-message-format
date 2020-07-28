@@ -3,10 +3,13 @@ import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 
 /**
- * @param error that sould be reported to the error monitor
+ * reports a ErrorFormat Object to the Error-Monitor
  * 
  * If error.correlationId is null, a new correlationId is created.
  * If error.correlationId is not null, the error will be reported with this correlationId
+ * 
+ * @param error that sould be reported to the error monitor
+ * @return ErrorFormat that was reported
  */
 export const reportError = (error: ErrorFormat): ErrorFormat => {
     if (error.correlationId == null) {
