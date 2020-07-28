@@ -53,7 +53,14 @@ before reporting an Error, you should check if the occoured error already has a 
         // This Error is the result of a transfering request and was already reported
         reportError(error.error);
     }
-
+    
+## LogMessageFormat
+`{ time: number; 
+  source: string; 
+  detector: string; 
+  message?: string; 
+  type: LogType; 
+  data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;}`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
