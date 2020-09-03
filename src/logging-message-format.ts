@@ -13,11 +13,11 @@ export interface LogMessageFormat {
   */
   time: number;
 
-  // The service where the error occurred (Not yet specified what should be reported: url,name,...)
-  source: string;
+  // The url of the service where the error occurred
+  sourceUrl: string;
 
-  // The service where the error was detected (Not yet specified what should be reported: url,name,...)
-  detector: string;
+  // The url of the service where the error was detected
+  detectorUrl: string;
 
   // optional: any additional message
   message?: string;
