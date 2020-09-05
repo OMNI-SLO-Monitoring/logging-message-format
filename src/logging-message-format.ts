@@ -8,24 +8,22 @@ import { LogType } from "./log-type";
 export interface LogMessageFormat {
   // Meta Data
   
-  /**
-  time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision. 
-  */
+  /** time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision. */
   time: number;
 
-  // The service where the error occurred (Not yet specified what should be reported: url,name,...)
-  source: string;
+  /** The url of the service where the error occurred */
+  sourceUrl: string;
 
-  // The service where the error was detected (Not yet specified what should be reported: url,name,...)
-  detector: string;
+  /** The url of the service where the error was detected */
+  detectorUrl: string;
 
-  // optional: any additional message
+  /** optional: any additional message */
   message?: string;
 
-  // type defines the used custom data
+  /** type defines the used custom data */
   type: LogType;
 
-  // Custom Data
+  /** Custom Data */
   data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
 }
 
