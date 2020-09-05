@@ -127,13 +127,13 @@
         "affectsGlobalScope": false
       },
       "../src/logging-message-format.ts": {
-        "version": "061c31f718c35e9bc38a1704ed127e69233a9c8b1b39f2f236744d7e54f8a110",
-        "signature": "4567c83dc488ee17970dcc8965a0f7eafacb09022d9813928cac4a92eddf7bc3",
+        "version": "4c6b875d74d0770d5566d5337d8f676e029261d089fd5e9ba03490aab2f581b6",
+        "signature": "970e6c1427ef9cdd333c72ec60765e8605068ee61554378bd8c1d85604917b8b",
         "affectsGlobalScope": false
       },
       "../src/error-format.ts": {
-        "version": "3926484494d92874bead27eb5638e1affc0ea62ed1d7108769c9deabe460c2c2",
-        "signature": "c9ab381a1c35efcf17a74aa35edf7dbb8c8769792d08e17cd391ec5425c28b36",
+        "version": "22e45bf87740bf82972a7623a2ff21ef61d59a81ac33bb6219ea8d81f9797d09",
+        "signature": "04a92dcee02b7a079a7e3b16cebd2545cf1d0ef7479ffadebec2aaeaff188999",
         "affectsGlobalScope": false
       },
       "../node_modules/axios/index.d.ts": {
@@ -142,8 +142,8 @@
         "affectsGlobalScope": false
       },
       "../src/error-reporter.ts": {
-        "version": "3662dd3606361404258b5964b203db219d7b2f57fcab24a5ddc421267eeced8f",
-        "signature": "94d88b4e7f5e35c60529736d6096bf446566e5b709fbf998ba109b1f04762bbf",
+        "version": "f5081ca42d76e6c02fa217ffe85e39539fb257a546545b40ad3b00716c84134b",
+        "signature": "03fcd28e0ba868bec6c502a8b7e0091e06773e0dd44ed866e0a4a276d6e52ebf",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
@@ -162,7 +162,6 @@
       "outDir": "./",
       "baseUrl": "..",
       "incremental": true,
-      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
