@@ -8,17 +8,17 @@ import axios from 'axios';
  * If error.correlationId is null, a new correlationId is created.
  * If error.correlationId is not null, the error will be reported with this correlationId
  * 
- * @param error that sould be reported to the error monitor
+ * @param error that should be reported to the error monitor
  * @return ErrorFormat that was reported
  */
-export const reportError = (error: ErrorFormat): ErrorFormat => {
+export const reportError = (error: ErrorFormat, errorMonitorUrl): ErrorFormat => {
     if (error.correlationId == null) {
         error.correlationId = uuidv4()
     }
 
     console.log("reporting error to monitor", error);
-    axios.post("http://localhost:3400", error)
-        .then(res => console.log("Error successfuly reported"))
+    axios.post(errorMonitorUrl, error)
+        .then(res => console.log("Error successfully reported"))
         .catch(err => console.log("Error when reporting error"));
 
     return error;
