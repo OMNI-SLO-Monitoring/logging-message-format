@@ -127,8 +127,8 @@
         "affectsGlobalScope": false
       },
       "../src/logging-message-format.ts": {
-        "version": "4c6b875d74d0770d5566d5337d8f676e029261d089fd5e9ba03490aab2f581b6",
-        "signature": "970e6c1427ef9cdd333c72ec60765e8605068ee61554378bd8c1d85604917b8b",
+        "version": "93c32c3a96df4267ea4591fe755b0a599a00f94c314561e63436b1fd7a4c33dc",
+        "signature": "a775103b32b2c218cac5f9ad22c36631f6d1a8de3cab9e79aa493817f07c05f6",
         "affectsGlobalScope": false
       },
       "../src/error-format.ts": {
@@ -142,8 +142,8 @@
         "affectsGlobalScope": false
       },
       "../src/error-reporter.ts": {
-        "version": "f5081ca42d76e6c02fa217ffe85e39539fb257a546545b40ad3b00716c84134b",
-        "signature": "03fcd28e0ba868bec6c502a8b7e0091e06773e0dd44ed866e0a4a276d6e52ebf",
+        "version": "3b3fc61d736286ffc79abc8f04b0544609943ffcf3d486f794613aaed295679f",
+        "signature": "e91ba2912ae6eadb40dd86db47f4ff090ae592f428d7e3113f436b2f027c5be4",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
