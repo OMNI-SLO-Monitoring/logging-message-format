@@ -9,6 +9,8 @@ import axios from 'axios';
  * If error.correlationId is not null, the error will be reported with this correlationId
  * 
  * @param error that should be reported to the error monitor
+ * @param errorMonitorUrl the url of the error-monitor, where the error should be send to
+ * 
  * @return ErrorFormat that was reported
  */
 export const reportError = (error: ErrorFormat, errorMonitorUrl): ErrorFormat => {
