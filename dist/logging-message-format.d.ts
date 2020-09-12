@@ -18,17 +18,33 @@ export interface LogMessageFormat {
     /** Custom Data */
     data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
 }
+/**
+  CpuUtilizationLogData is the custom data for Cpu Utilization Logs
+*/
 export interface CpuUtilizationLogData {
+    /** CPU Utilization value */
     cpuUtilization: number;
 }
+/**
+  TimeoutLogData is the custom data for timeout logs
+*/
 export interface TimeoutLogData {
+    /** Timeout duration of response */
     timeoutDuration: number;
 }
+/**
+  CbOpenLogData is the custom data for circuit breaker open logs
+*/
 export interface CbOpenLogData {
+    /** Circuit Breaker Open Time */
     openTime: number;
+    /** Number of failed responses until circuit breaker open */
     failedResponses: number;
 }
+/** ErrorLogData is the custom data for error response logs */
 export interface ErrorLogData {
+    /** Expected data */
     expected: any;
+    /** Data that was returned */
     result: any;
 }
