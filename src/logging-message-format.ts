@@ -60,5 +60,5 @@ export interface ErrorLogData {
   expected: any;
 
   /** Data that was returned */
-  result: any;
+  actual: any;
 }
