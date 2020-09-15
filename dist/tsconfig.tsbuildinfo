@@ -127,8 +127,8 @@
         "affectsGlobalScope": false
       },
       "../src/logging-message-format.ts": {
-        "version": "93c32c3a96df4267ea4591fe755b0a599a00f94c314561e63436b1fd7a4c33dc",
-        "signature": "a775103b32b2c218cac5f9ad22c36631f6d1a8de3cab9e79aa493817f07c05f6",
+        "version": "64175931d40daed7a5f6cf90e0f1dae25ec5f0559d563eef5ea6187b28d7d35a",
+        "signature": "35e00cfa27bfbb617db7aa32c18e97f7379ebd4eb1e703521353eb8107931591",
         "affectsGlobalScope": false
       },
       "../src/error-format.ts": {
