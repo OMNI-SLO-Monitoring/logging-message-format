@@ -5,7 +5,7 @@ import { LogType } from "./log-type";
   It contains Meta Data which every Log should have and Custom Data.
   Which Custom Data is used, is defined by the used type (LogType).
 */
-export interface LogMessageFormat {
+abstract class LogMessageFormat {
   // Meta Data
   
   /** time : milliseconds elapsed since the UNIX epoch. Type JavaScript Number, 64 Bit precision. */
@@ -22,21 +22,13 @@ export interface LogMessageFormat {
 
   /** type defines the used custom data */
   type: LogType;
-
-  /** Custom Data */
-  data: CustomLogData;
 }
-
-/**
- * Parent class for custom data types. Each log type has different custom types.
- */
-abstract class CustomLogData {}
 
 
 /**
   CpuUtilizationLogData is the custom data for Cpu Utilization Logs
 */
-export interface CpuUtilizationLogData extends CustomLogData {
+export interface CpuUtilizationLogData extends LogMessageFormat {
   /** CPU Utilization value */
   cpuUtilization: number;
 }
@@ -44,7 +36,7 @@ export interface CpuUtilizationLogData extends CustomLogData {
 /**
   TimeoutLogData is the custom data for timeout logs
 */
-export interface TimeoutLogData extends CustomLogData {
+export interface TimeoutLogData extends LogMessageFormat {
   /** Timeout duration of response */
   timeoutDuration: number
 }
@@ -52,7 +44,7 @@ export interface TimeoutLogData extends CustomLogData {
 /**
   CbOpenLogData is the custom data for circuit breaker open logs
 */
-export interface CbOpenLogData extends CustomLogData {
+export interface CbOpenLogData extends LogMessageFormat {
   /** Circuit Breaker Open Time */
   openTime: number;
 
@@ -61,7 +53,7 @@ export interface CbOpenLogData extends CustomLogData {
 }
 
 /** ErrorLogData is the custom data for error response logs */
-export interface ErrorLogData extends CustomLogData {
+export interface ErrorLogData extends LogMessageFormat {
   /** Expected data */
   expected: any;
 
