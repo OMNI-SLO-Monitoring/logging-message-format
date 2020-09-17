@@ -24,13 +24,16 @@ export interface LogMessageFormat {
   type: LogType;
 
   /** Custom Data */
-  data: CpuUtilizationLogData | TimeoutLogData | CbOpenLogData | ErrorLogData;
+  data: CustomLogData;
 }
+
+abstract class CustomLogData {}
+
 
 /**
   CpuUtilizationLogData is the custom data for Cpu Utilization Logs
 */
-export interface CpuUtilizationLogData {
+export interface CpuUtilizationLogData extends CustomLogData {
   /** CPU Utilization value */
   cpuUtilization: number;
 }
@@ -38,7 +41,7 @@ export interface CpuUtilizationLogData {
 /**
   TimeoutLogData is the custom data for timeout logs
 */
-export interface TimeoutLogData {
+export interface TimeoutLogData extends CustomLogData {
   /** Timeout duration of response */
   timeoutDuration: number
 }
@@ -46,7 +49,7 @@ export interface TimeoutLogData {
 /**
   CbOpenLogData is the custom data for circuit breaker open logs
 */
-export interface CbOpenLogData {
+export interface CbOpenLogData extends CustomLogData {
   /** Circuit Breaker Open Time */
   openTime: number;
 
@@ -55,7 +58,7 @@ export interface CbOpenLogData {
 }
 
 /** ErrorLogData is the custom data for error response logs */
-export interface ErrorLogData {
+export interface ErrorLogData extends CustomLogData {
   /** Expected data */
   expected: any;
 
