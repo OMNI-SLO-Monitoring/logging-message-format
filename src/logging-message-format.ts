@@ -27,6 +27,9 @@ export interface LogMessageFormat {
   data: CustomLogData;
 }
 
+/**
+ * Parent class for custom data types. Each log type has different custom types.
+ */
 abstract class CustomLogData {}
 
 
