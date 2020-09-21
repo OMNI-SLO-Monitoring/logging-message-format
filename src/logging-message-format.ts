@@ -28,9 +28,9 @@ export interface LogMessageFormat {
 }
 
 /**
- * Parent class for custom data types. Each log type has different custom types.
+ * Parent interface for custom data types. Each log type has different custom types.
  */
-abstract class CustomLogData {}
+interface CustomLogData {}
 
 
 /**
@@ -41,7 +41,7 @@ export interface CpuUtilizationLogData extends CustomLogData {
   cpuUtilization: number;
 }
 
-/**
+/** 
   TimeoutLogData is the custom data for timeout logs
 */
 export interface TimeoutLogData extends CustomLogData {
